@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Page 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div class="login-box" id="loginBox">
+        <h2>Login 💫</h2>
+        <input type="text" id="username" placeholder="Enter name">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content" id="content">
+        <h1>Welcome to my home💕</h1>
+
+        <img src="c:\Users\ELCOT\Downloads\WhatsApp Image 2026-02-01 at 8.37.50 PM.jpeg" alt="Friend Photo">
+
+        <p>Just for us 😊</p>
+
+        <audio controls>
+            <source src="C:\Users\ELCOT\Downloads\song.mpeg" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </div>
+
+<script>
+    function login() {
+        let user = document.getElementById("username").value;
+        let pass = document.getElementById("password").value;
+
+        if (user !== "" && pass !== "") {
+            document.getElementById("loginBox").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        } else {
+            alert("Please enter login details!");
+        }
+    }
+</script>
+
+</body>
+</html>
